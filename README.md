@@ -2,12 +2,13 @@
 
 The Boston Calendar MCP.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 899+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
+| `events` | Upcoming Greater Boston events from The Boston Calendar. Defaults to a 2-week window from today. Filter by date range, keyword (title/description/tags), and free admission. Returns normalized events sorted by date/time. |
 | `tags` | List the event tags/keywords in use on The Boston Calendar, with counts — useful as filterable facets for the events tool. |
 
 ## Quick Start
@@ -24,7 +25,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 899+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -48,7 +49,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
