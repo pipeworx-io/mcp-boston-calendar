@@ -1,0 +1,44 @@
+[
+  {
+    "name": "events",
+    "description": "Upcoming Greater Boston events from The Boston Calendar. Defaults to a 2-week window from today. Filter by date range, keyword (title/description/tags), and free admission. Returns normalized events sorted by date/time.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string",
+          "description": "Earliest event date YYYY-MM-DD (default: today)."
+        },
+        "to": {
+          "type": "string",
+          "description": "Latest event date YYYY-MM-DD (default: 14 days from `from`). Pass \"\" for no upper bound."
+        },
+        "query": {
+          "type": "string",
+          "description": "Keyword filter over title, description, and tags, e.g. \"free music\", \"kids\", \"art\"."
+        },
+        "free_only": {
+          "type": "boolean",
+          "description": "If true, only events whose admission is free."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max events to return (1-200, default 50)."
+        }
+      }
+    }
+  },
+  {
+    "name": "tags",
+    "description": "List the event tags/keywords in use on The Boston Calendar, with counts — useful as filterable facets for the events tool.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "number",
+          "description": "How many top tags to return (default 40)."
+        }
+      }
+    }
+  }
+]
