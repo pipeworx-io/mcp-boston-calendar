@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-boston-calendar",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "The Boston Calendar MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "boston-calendar",
     "gatewaySlug": "boston-calendar",
-    "sourceHash": "v1-21781846ccfd78e4708920198bf6b6fe9a58ceb4e5eb4efab740ee4b0ad4844b",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-5e09cf15255689303900925d25f2199b627b9d2a86744c7968be8fb497c9d4dc",
+    "sourceCommit": "547a3983b42dacf4389ca474860b0a1dee8e6053"
   }
 }
